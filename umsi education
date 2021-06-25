@@ -10,3 +10,4 @@ for verb in verbs:
 print(ing)
 
 >>> ['kayaking', 'crying', 'walking', 'eating', 'drinking', 'flying']
+
