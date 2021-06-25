@@ -8,3 +8,5 @@ for verb in verbs:
     ing.append(verb + "ing")
     
 print(ing)
+
+>>> ['kayaking', 'crying', 'walking', 'eating', 'drinking', 'flying']
