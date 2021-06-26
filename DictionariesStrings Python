@@ -1,0 +1,17 @@
+# counting how many times each word is in a text
+
+# Provided is a string saved to the variable name sentence. 
+# Split the string into a list of words, then create a dictionary that contains each word and the number of times it occurs. 
+# Save this dictionary to the variable name word_counts.
+
+sentence = "The dog chased the rabbit into the forest but the rabbit was too quick."
+
+words = sentence.split()
+
+word_counts = {}
+
+for word in words:Provided is a string saved to the variable name sentence. Split the string into a list of words, then create a dictionary that contains each word and the number of times it occurs. Save this dictionary to the variable name word_counts.
+    if word not in word_counts:
+        word_counts[word]=0Provided is a string saved to the variable name sentence. Split the string into a list of words, then create a dictionary that contains each word and the number of times it occurs. Save this dictionary to the variable name word_counts.
+    
+    word_counts[word]=word_counts[word]+1
