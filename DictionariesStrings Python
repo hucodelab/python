@@ -15,3 +15,28 @@ for word in words:Provided is a string saved to the variable name sentence. Spli
         word_counts[word]=0Provided is a string saved to the variable name sentence. Split the string into a list of words, then create a dictionary that contains each word and the number of times it occurs. Save this dictionary to the variable name word_counts.
     
     word_counts[word]=word_counts[word]+1
+    
+    
+    
+# Create the dictionary characters that shows each character from the string sally and its frequency. 
+# Then, find the most frequent letter based on the dictionary. Assign this letter to the variable best_char
+
+sally = "sally sells sea shells by the sea shore"
+
+characters = {}
+
+for char in sally:
+    if char not in characters:
+        characters[char]=0
+        
+    characters[char]+=1
+    
+best_char_freq = 0
+
+for c in characters:
+    if characters[c] > best_char_freq:
+        best_char_freq=characters[c]
+        
+for key, value in characters.items():
+    if value == best_char_freq:
+        best_char = key
